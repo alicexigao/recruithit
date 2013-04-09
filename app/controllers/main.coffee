@@ -27,11 +27,11 @@ class Main extends Spine.Controller
     
   parseParams: (params) ->
     if not params.assignmentId
+      @mode = "preview"
     else if params.assignmentId is "ASSIGNMENT_ID_NOT_AVAILABLE"
       @mode = "preview"
     else
       @mode = "accepted"
-    # console.log @mode
     
     if params.turkSubmitTo is undefined
       @submitTo = ""
