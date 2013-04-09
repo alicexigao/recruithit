@@ -51,6 +51,8 @@ class Main extends Spine.Controller
 
   checkboxChanged: (ev) =>
     ev.preventDefault()
+    if @mode isnt "accepted"
+      return
     if @validate() is true
       @submitButtonDisplayed = true
       @submitButton.show()
@@ -60,6 +62,8 @@ class Main extends Spine.Controller
     
   selectFirstChanged: (ev) =>
     ev.preventDefault()
+    if @mode isnt "accepted"
+      return
     if @validate() is true
       @submitButtonDisplayed = true
       @submitButton.show()
@@ -69,6 +73,8 @@ class Main extends Spine.Controller
     
   selectSecondChanged: (ev) =>
     ev.preventDefault()
+    if @mode isnt "accepted"
+      return
     if @validate() is true
       @submitButtonDisplayed = true
       @submitButton.show()
