@@ -1,0 +1,88 @@
+<% if @mode is "preview": %>
+<span class="fontRed">This is only a preview!  Please accept the HIT to start working on it!</span>
+
+
+
+<% end %>
+
+
+<h3>We are recruiting MTurk workers for our behavior experiment</h3>
+
+<form action="<%= @submitTo %>" method="<%= @method %>">
+<p>
+  We will be running a behavior experiment over the next month.  In the experiment, you will play a game with other MTurk workers in real time for a fixed number of rounds. We need at least 1800 MTurk workers, and each worker may complete 1 HIT only.<br/><br/>
+
+  The HIT takes 10 minutes to complete.  You will be paid <span class="textBold">$1.00 base payment (=$10/hour)</span>, and a <span class="textBold">bonus payment up to $1.50</span> .
+
+  <!-- <span class="textBold">The game takes 3 minutes</span>, and you will be paid a bonus <span class="textBold">up to $1.50</span>.<br/><br/>
+  
+  <span class="textBold">The rest of the HIT</span> takes <span class="textBold">6 minutes</span>, and you will be paid <span class="textBold">$1.00 base payment (=$10/hour)</span>.<br/><br/> -->
+  
+  <h3>If you would like to participate in this experiment, please answer two required questions below in order to submit this HIT:</h3>
+  
+  <p>Question 1: Consent for participation</p>
+  <input type="checkbox" name="consent" id="idConsent" value="true"><label for="idConsent"> Check the box if you would like to participate in this experiment and if you consent to receiving email notifications about new HITs posted and instructions for this experiment.</label><br/><br/>
+    
+  <p>Question 2: Availability</p>
+  Select two times in EST when you will most likely be avaialble to participate in this experiment.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<select id="idFirstTime" name="firstTime">
+    <option value="default"></option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+  </select> o'clock EST, and 
+  
+  <select id="idSecondTime" name="secondTime">
+    <option value="default"></option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+  </select> o'clock EST
+  <br/><br/>
+  
+  <input type="hidden" id="assignment_id" name="assignmentId" />
+  <input id="idSubmitButton" type="submit" value="Submit HIT">
+</p>
+</form>
