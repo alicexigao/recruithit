@@ -26,7 +26,7 @@ class App extends Spine.Controller
       data: toSend
       dataType: 'text'
       success: (data) ->
-        alert(data)
+        return data.found;
       error: (XMLHttpRequest, textStatus, errorThrown) ->
         console.log(textStatus)
       })
