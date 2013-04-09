@@ -31,7 +31,7 @@ class Main extends Spine.Controller
       @mode = "preview"
     else
       @mode = "accepted"
-    console.log @mode
+    # console.log @mode
     
     if params.turkSubmitTo is undefined
       @submitTo = ""
