@@ -1,8 +1,6 @@
 <% if @mode is "preview": %>
 <span class="fontRed">This is only a preview!  Please accept the HIT to start working on it!</span>
 
-
-
 <% end %>
 
 
@@ -84,6 +82,9 @@
   <br/><br/>
   
   <input type="hidden" id="assignment_id" name="assignmentId" />
+  
+  <% if @mode is "accepted": %>
   <input id="idSubmitButton" type="submit" value="Submit HIT">
+  <% end %>
 </p>
 </form>
