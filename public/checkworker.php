@@ -1,7 +1,7 @@
 <?php
 
   $server = 'localhost';
-  $database = "turkserver";
+  $database = "peerprediction";
   $username = "xagao";
   $password = "fashion";
   $db_handle = mysql_connect($server, $username, $password);
