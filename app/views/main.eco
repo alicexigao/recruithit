@@ -10,7 +10,7 @@
 <p>
   We will be running a behavior experiment over the next month.  In the experiment, you will play a game with other MTurk workers in real time for a fixed number of rounds. We need at least 1800 MTurk workers, and each worker may complete 1 HIT only.<br/><br/>
 
-  The HIT takes 10 minutes to complete.  You will be paid <span class="textBold">$1.00 base payment (=$10/hour)</span>, and a <span class="textBold">bonus payment up to $1.50</span> .
+  The HIT takes 10 minutes to complete.  You will be paid <span class="textBold">$1.00 base payment</span>, and a <span class="textBold">bonus payment up to $1.50</span> .
 
   <!-- <span class="textBold">The game takes 3 minutes</span>, and you will be paid a bonus <span class="textBold">up to $1.50</span>.<br/><br/>
   
@@ -78,10 +78,10 @@
     <option value="22">10 PM</option>
     <option value="23">11 PM</option>
 
-  </select> o'clock EST
+  </select> EST
   <br/><br/>
   
-  <input type="hidden" id="assignment_id" name="assignmentId" />
+  <input type="hidden" id="assignment_id" name="assignmentId" value="">
   
   <% if @mode is "accepted": %>
   <input id="idSubmitButton" type="submit" value="Submit HIT">

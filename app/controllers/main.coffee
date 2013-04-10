@@ -6,8 +6,9 @@ class Main extends Spine.Controller
   elements:
     "input#idSubmitButton" : "submitButton"
     "input:checkbox" : "checkbox"
-    "select#idFirstTime" : "selectFirst"
+    "select#idFirstTime"  : "selectFirst"
     "select#idSecondTime" : "selectSecond"
+    "input#assignment_id" : "inputAssignId"
   
   events:
     # "click input#idSubmitButton" : "submitButtonClicked"
@@ -24,8 +25,11 @@ class Main extends Spine.Controller
     
     if @mode isnt "accepted" or @submitButtonDisplayed is false
       @submitButton.hide()
+
+    @inputAssignId.val(@params.assignmentId)
     
   parseParams: (params) ->
+    @params = params
     if not params.assignmentId
       @mode = "preview"
     else if params.assignmentId is "ASSIGNMENT_ID_NOT_AVAILABLE"
