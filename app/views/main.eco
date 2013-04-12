@@ -22,7 +22,7 @@
   <input type="checkbox" name="consent" id="idConsent" value="true"><label for="idConsent"> Check the box if you would like to participate in this experiment and if you consent to receiving email notifications about new HITs posted and instructions for this experiment.</label><br/><br/>
     
   <p>Question 2: Availability</p>
-  Select two times in EST when you will most likely be avaialble to participate in this experiment.<br/>
+  Select <span class="textBold">two different times in EST</span> when you will most likely be avaialble to participate in this experiment.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<select id="idFirstTime" name="firstTime">
     <option value="default"></option>
     <option value="0">midnight</option>

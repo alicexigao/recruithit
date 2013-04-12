@@ -51,6 +51,8 @@ class Main extends Spine.Controller
       return false
     if @selectSecond.val() is "default"
       return false
+    if @selectFirst.val() is @selectSecond.val()
+      return false
     return true
 
   checkboxChanged: (ev) =>
