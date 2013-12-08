@@ -10,7 +10,7 @@ class App extends Spine.Controller
     params = @getURLParams()
 
     if params.workerId and @workerExists(params) is true
-      @html "<h3>Sorry!  You are not eligible for our behavior experiment because you have played this game before.  Please do not accept this HIT or return it. </h3>"
+      @html "<h3>Sorry!  You are not eligible for our behavior experiment because you have played this game before based on our records.  Please return this HIT. </h3>"
     else 
       @main = new Main
       @main.parseParams(params)

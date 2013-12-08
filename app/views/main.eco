@@ -3,14 +3,19 @@
 
 <% end %>
 
+<p><span class="textBold">Important!  Over the past weeks, if you have already completed a HIT titled "play a game with other turkers in real time and earn $0.10 to $0.50 bonus", please DO NOT ACCEPT this HIT since I am only looking for workers who have not done this HIT before.  Sorry for any trouble and confusion!<br/></span>
+</p>
 
 <h3>We are recruiting MTurk workers for our behavior experiment</h3>
 
 <form action="<%= @submitTo %>" method="<%= @method %>">
+
+
+
 <p>
   We will be running a behavior experiment over the next month.  In the experiment, you will play a game with other MTurk workers in real time for a fixed number of rounds. We need at least 1800 MTurk workers, and each worker may complete 1 HIT only.<br/><br/>
 
-  The HIT takes 10 minutes to complete.  You will be paid <span class="textBold">$1.00 base payment</span>, and a <span class="textBold">bonus payment up to $1.50</span> .
+  Each HIT in the experiment takes 10 minutes to complete.  You will be paid <span class="textBold">$1.00 base payment</span>, and a <span class="textBold">bonus payment up to $1.50</span> .
 
   <!-- <span class="textBold">The game takes 3 minutes</span>, and you will be paid a bonus <span class="textBold">up to $1.50</span>.<br/><br/>
   
