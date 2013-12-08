@@ -6,15 +6,10 @@ class Main extends Spine.Controller
   elements:
     "input#idSubmitButton" : "submitButton"
     "input:checkbox" : "checkbox"
-    "select#idFirstTime"  : "selectFirst"
-    "select#idSecondTime" : "selectSecond"
     "input#assignment_id" : "inputAssignId"
   
   events:
-    # "click input#idSubmitButton" : "submitButtonClicked"
     "change input:checkbox" : "checkboxChanged"
-    "change select#idFirstTime" : "selectFirstChanged"
-    "change select#idSecondTime" : "selectSecondChanged"
     
   constructor: ->
     super
@@ -47,12 +42,6 @@ class Main extends Spine.Controller
   validate: =>
     if not @checkbox.is(':checked')
       return false
-    if @selectFirst.val() is "default"
-      return false
-    if @selectSecond.val() is "default"
-      return false
-    if @selectFirst.val() is @selectSecond.val()
-      return false
     return true
 
   checkboxChanged: (ev) =>
@@ -66,26 +55,5 @@ class Main extends Spine.Controller
       @submitButtonDisplayed = false
       @submitButton.hide()
     
-  selectFirstChanged: (ev) =>
-    ev.preventDefault()
-    if @mode isnt "accepted"
-      return
-    if @validate() is true
-      @submitButtonDisplayed = true
-      @submitButton.show()
-    else 
-      @submitButtonDisplayed = false
-      @submitButton.hide()
-    
-  selectSecondChanged: (ev) =>
-    ev.preventDefault()
-    if @mode isnt "accepted"
-      return
-    if @validate() is true
-      @submitButtonDisplayed = true
-      @submitButton.show()
-    else 
-      @submitButtonDisplayed = false
-      @submitButton.hide()
     
 module.exports = Main
