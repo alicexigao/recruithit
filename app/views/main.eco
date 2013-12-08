@@ -1,5 +1,5 @@
 <% if @mode is "preview": %>
-<span class="fontRed">This is only a preview!  Please accept the HIT to start working on it!</span>
+    <span class="fontRed">This is only a preview!  Please accept the HIT to start working on it!</span>
 <% end %>
 
 <p>
@@ -17,16 +17,18 @@
 <form action="<%= @submitTo %>" method="<%= @method %>">
 
     <p>
-        We will be running a behavior experiment over a few months. In the experiment, you will play a game
-        for a fixed number of rounds. We need at least 1800 MTurk workers, and
-        each worker may complete 1 HIT only.<br/><br/>
+        We will be running a behavior experiment over the next few months. In the experiment, you will play a game
+        for a fixed number of rounds. Each worker may complete 1 HIT only.  We need a lot of workers!<br/><br/>
 
         Each HIT in the experiment takes 10 minutes to complete. You will be paid
         <span class="textBold">$1.00 base payment</span>, and a <span class="textBold">bonus payment up to $1.50</span>
         .
+    </p>
 
-    <h3>If you would like to participate in this experiment, please answer the questions below
-        in order to submit this HIT:</h3>
+    <h3>
+        If you would like to participate in this experiment, please answer the questions below
+        in order to submit this HIT:
+    </h3>
 
     <p>Question 1: Consent for participation</p>
     <input type="checkbox" name="consent" id="idConsent" value="true">
@@ -40,7 +42,7 @@
     <input type="hidden" id="assignment_id" name="assignmentId" value="">
 
     <% if @mode is "accepted": %>
-    <input id="idSubmitButton" type="submit" value="Submit HIT">
+        <input id="idSubmitButton" type="submit" value="Submit HIT">
     <% end %>
-    </p>
+
 </form>
