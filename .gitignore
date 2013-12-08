@@ -1,7 +1,8 @@
 Procfile
-npm_modules/                                                                                                          Procfile
+npm_modules/                    
 .npmignore
 node_modules/
 public/application.css
 public/application.js
 public/.DS_store
+.idea/
