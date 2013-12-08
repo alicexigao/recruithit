@@ -26,14 +26,18 @@ class App extends Spine.Controller
       data: toSend
       dataType: 'text'
       success: (data) =>
-        console.log data
+        start = data.indexOf("{") 
+        end = data.indexOf("}") + 1
+        data = data.substring(start, end)
         jsonObj = $.parseJSON(data)
         return jsonObj.found
       error: (XMLHttpRequest, textStatus, errorThrown) =>
         return false
       })
     text = obj.responseText
-    console.log text
+    start = text.indexOf("{")
+    end = text.indexOf("}") + 1
+    text = text.substring(start, end)
     jsonObj = $.parseJSON(text)
     return jsonObj.found    
 
