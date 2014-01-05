@@ -5,30 +5,30 @@
 <form action="<%= @submitTo %>" method="<%= @method %>">
 
     <h3>
-        The purpose of this HIT is to recruit workers for our behavioral experiment.
+        We are recruiting workers for our behavioral experiment.
     </h3>
 
     <p>
-        <span class="textBold">Read this IMPORTANT message before you accept this HIT:</span>
+        <span class="textBold">IMPORTANT MESSAGE BEFORE YOU ACCEPT THIS HIT:</span>
             If you have already completed a HIT titled "play a game with other turkers and earn $0.10 to
-            $0.50 bonus", please DO NOT ACCEPT this HIT.  If you are unsure, email me your workerId at
+            $0.50 bonus", please DO NOT ACCEPT this HIT.  If you are unsure, email your workerId to
             alice.gao11@gmail.com and I will check it for you.
     </p>
 
     <p>
         <span class="textBold">What is the purpose of this HIT?</span>
 
-        We are using this HIT to recruit workers for our behavioral experiment.  Once you complete this HIT, you will
-        receive an email with instructions on how to participate in our behavioral experiment.
+        We are using this HIT to recruit workers for our behavioral experiment.  Once you complete this HIT, your HIT
+        will be approved and you will receive an email with instructions on how to participate in our experiment.
     </p>
 
     <p>
         <span class="textBold">What is our behavioral experiment about?</span>
 
         In our behavioral experiment, you will play a game with other MTurk workers in real time for a number of
-        rounds.  Each game in the experiment takes roughly 10 minutes to complete. You can only participate once in the
-        experiment.  For participating in the experiment, you will receive a base payment of
-        <span class="textBold">$1.00</span>, and a <span class="textBold">bonus payment up to $1.50</span>.
+        rounds.  The takes 10 minutes to complete. You can only participate once.  For your participation,
+        you will receive a base payment of <span class="textBold">$1.00</span>, and a
+        <span class="textBold">bonus payment up to $1.50</span>.
     </p>
 
     <p>
@@ -36,14 +36,14 @@
 
         If you would like to participate in our experiment, please check the box below and submit this HIT.
         Your HIT will be approved shortly and you will receive an email with instructions on how to participate in our
-        behavioral experiment.  We will only post the HITs for our experiment at specific times during the day.
-        Please pay attention to the details in the emails in order to participate.
+        experiment.  We will only post the HITs for our experiment at specific times during the day.
+        Please pay attention to the details in the emails.
     </p>
 
     <input type="checkbox" name="consent" id="idConsent" value="true">
     <label for="idConsent">
-        Check the box if you would like to participate in this experiment and receive email notifications
-        about this experiment.
+        Check the box if you would like to receive email notifications about our experiment and participate in the
+        experiment.
     </label>
 
     <input type="hidden" id="assignment_id" name="assignmentId" value="">
