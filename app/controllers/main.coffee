@@ -54,6 +54,6 @@ class Main extends Spine.Controller
     else 
       @submitButtonDisplayed = false
       @submitButton.hide()
-    
+
     
 module.exports = Main

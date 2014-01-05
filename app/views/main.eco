@@ -2,42 +2,49 @@
     <span class="fontRed">This is only a preview!  Please accept the HIT to start working on it!</span>
 <% end %>
 
-<p>
-    <span class="textBold">
-        Important!  If you have already completed a HIT titled
-        "play a game with other turkers in real time and earn $0.10 to $0.50 bonus", please DO NOT ACCEPT
-        this HIT since I am only looking for workers who have not done this HIT before.
-        Sorry for any trouble and confusion!
-        <br/>
-    </span>
-</p>
-
-<h3>We are recruiting MTurk workers for our behavior experiment</h3>
-
 <form action="<%= @submitTo %>" method="<%= @method %>">
 
-    <p>
-        We will be running a behavior experiment over the next few months. In the experiment, you will play a game
-        for a fixed number of rounds. Each worker may complete 1 HIT only.  We need a lot of workers!<br/><br/>
-
-        Each HIT in the experiment takes 10 minutes to complete. You will be paid
-        <span class="textBold">$1.00 base payment</span>, and a <span class="textBold">bonus payment up to $1.50</span>
-        .
-    </p>
-
     <h3>
-        If you would like to participate in this experiment, please answer the questions below
-        in order to submit this HIT:
+        The purpose of this HIT is to recruit workers for our behavioral experiment.
     </h3>
 
-    <p>Question 1: Consent for participation</p>
+    <p>
+        <span class="textBold">Read this IMPORTANT message before you accept this HIT:</span>
+            If you have already completed a HIT titled "play a game with other turkers and earn $0.10 to
+            $0.50 bonus", please DO NOT ACCEPT this HIT.  If you are unsure, email me your workerId at
+            alice.gao11@gmail.com and I will check it for you.
+    </p>
+
+    <p>
+        <span class="textBold">What is the purpose of this HIT?</span>
+
+        We are using this HIT to recruit workers for our behavioral experiment.  Once you complete this HIT, you will
+        receive an email with instructions on how to participate in our behavioral experiment.
+    </p>
+
+    <p>
+        <span class="textBold">What is our behavioral experiment about?</span>
+
+        In our behavioral experiment, you will play a game with other MTurk workers in real time for a number of
+        rounds.  Each game in the experiment takes roughly 10 minutes to complete. You can only participate once in the
+        experiment.  For participating in the experiment, you will receive a base payment of
+        <span class="textBold">$1.00</span>, and a <span class="textBold">bonus payment up to $1.50</span>.
+    </p>
+
+    <p>
+        <span class="textBold">What do I need to do in this HIT?</span>
+
+        If you would like to participate in our experiment, please check the box below and submit this HIT.
+        Your HIT will be approved shortly and you will receive an email with instructions on how to participate in our
+        behavioral experiment.  We will only post the HITs for our experiment at specific times during the day.
+        Please pay attention to the details in the emails in order to participate.
+    </p>
+
     <input type="checkbox" name="consent" id="idConsent" value="true">
     <label for="idConsent">
-        Check the box if you would like to participate in this experiment and if you consent to receiving email
-        notifications about new HITs posted and instructions for this experiment.
+        Check the box if you would like to participate in this experiment and receive email notifications
+        about this experiment.
     </label>
-
-    <br/><br/>
 
     <input type="hidden" id="assignment_id" name="assignmentId" value="">
 
