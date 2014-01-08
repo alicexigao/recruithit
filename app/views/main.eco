@@ -10,8 +10,8 @@
 
     <p>
         <span class="textBold">IMPORTANT MESSAGE BEFORE YOU ACCEPT THIS HIT:</span>
-            If you have already completed a HIT titled "play a game with other turkers and earn $0.10 to
-            $0.50 bonus", please DO NOT ACCEPT this HIT.  If you are unsure, email your workerId to
+            Please DO NOT ACCEPT this HIT if you have completed a HIT titled
+        "play a game with other turkers and earn $0.10 to $0.50 bonus".  If you are unsure, email your worker ID to
             alice.gao11@gmail.com and I will check it for you.
     </p>
 
@@ -26,7 +26,7 @@
         <span class="textBold">What is our behavioral experiment about?</span>
 
         In our behavioral experiment, you will play a game with other MTurk workers in real time for a number of
-        rounds.  The takes 10 minutes to complete. You can only participate once.  For your participation,
+        rounds.  The task takes 10 minutes to complete. You can only participate once.  For your participation,
         you will receive a <span class="textBold">base payment of $1.00</span>, and a
         <span class="textBold">bonus payment up to $1.50</span>.
     </p>
